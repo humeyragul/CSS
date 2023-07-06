@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Attribute Selectors</title>
+    <link rel="stylesheet" href="style_2.css">
+</head>
+<body>
+    <h1>Attribute Selectors</h1>
+    
+    <p>Organizational ability is an essential attribute for a good manager.</p>
+    
+    <p title="second">
+        p[title] selects all paragraphs containing a title attribute.
+    </p>
+    <p title="third paragraph">
+        p[title="paragraph"] selects all paragraphs with a title attribute containing the wxact text, #4 paragraph. Matches are case-sensitive and must matc letter for letter including whitespace.
+    </p>
+    <p title="forth paragraph">
+        p[title="paragraph"] selects all paragraphs with a title attribute containing the wxact text, #4 paragraph. Matches are case-sensitive and must matc letter for letter including whitespace.
+    </p>
+    <p>
+        <a href="http://www.google.com" target="_blank">example 1</a>
+        <a href="http://wwwgoogle.com">example 2</a>
+    </p>
+    <p>
+        <input type="text" name="Name">
+        <input type="button" value="Button">
+    </p>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fonts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <style>
+        body{
+          font-size: 10px;
+            background-color: black;
+            color: white;
+            width: 900px;
+            margin: 30px auto;
+        }
+        h1{
+            text-transform: uppercase;
+        }
+        p{
+            font-size: 200%;/*body için geçerli büyüklüğün iki katı*/
+            font-family: 'Courier New', monospace;
+            line-height: 150%;/*satır aralıkları*/
+            word-spacing: 3px;/*kelime aralıkları*/
+            text-indent: 20px;/*paragraf başı*/
+            letter-spacing: 2px;
+        }
+        p#first{
+            text-align: right;
+        }
+        p#second{
+            text-align: left;
+            border: 1px solid white;
+            padding: 10px;
+            column-count: 2;
+            column-rule: 1px solid white;
+        }
+        span{
+            font-size: 2em;/*body için geçerli büyüklüğün 2 katı*/
+            font-family: 'Dancing Script', cursive;
+            text-align: center;
+        }
+        div.ikon{
+            font-size: 50px;
+            margin: auto;
+        }
+        .bold{
+            font-weight: bold;
+        }
+        .italic{
+            font-style: italic;
+        }
+        .link{
+            color: darkgoldenrod;
+            text-decoration: none;
+        }
+        div{
+            text-align: center;
+            color: beige;
+        }
+        img{
+            width: auto;
+            float:none
+        }
+    </style>
+</head>
+<body>
+   <h1>Tüm harfleri büyük yapma</h1>
+        <div class="ikon">
+        <a href="#"><i class="fa brands fa-instagram" style="color: #b43171;"></i></a>
+        <a href="#"><i class="fa brands fa-twitter" style="color: #1c5bca;" weight:150px;></i></a>
+        <a href="#"><i class="fa brands fa-youtube" style="color: #d21e1e;"></i></a>
+        </div>
+   <hr>
+    <p id="first">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis nostrum quaerat reprehenderit, omnis. Consectetur debitis earum soluta, eum porro omnis, temporibus ipsam, alias inventore illum obcaecati natus eos, nesciunt vero.
+    </p>
+        <span >
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe itaque culpa nulla. error quo eaque ut totam sunt voluptatum. Delectus explicabo commodi neque odio id ea incidunt.<span class="bold italic">
+            <a class="link" href="#">Quaerat</a>
+            </span>
+        </span>
+       <p id="second">
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos ipsa dolores tempore quasi reiciendis impedit, at possimus dolorum? Laudantium nulla tenetur mollitia nihil ad velit asperiores commodi aperiam hic, provident.
+       </p>
+       <div>
+       <a href="">Link 1</a>
+       <a href="">Link 2</a>
+       <a href="">Link 3</a>
+       </div>
+       <img src="bulut.jpg">
+</body>
+</html>

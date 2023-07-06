@@ -1,0 +1,179 @@
+/*GROUP SELECTORS
+    1: (*) = Tüm etiketler
+    2: (p) = Tüm p etiketleri
+    3: (div p) = Div içindeki tüm p etiketleri
+    4: (div,p) = Tüm div ve tüm p etiketleri
+    5: (div > p) = Üst etiketi div olan tüm p
+    6: (p~ div) = p ile aynı seviyede ve pden sonraki tüm div etiketleri
+    7: (p+div) = p etiketinden sonra gelen div
+
+
+*{
+    border: 1px solid black;
+}
+p{
+    border: 1px solid blue;
+}
+div p{
+    background-color: beige;
+}
+.container div.box{
+    background-color: darkkhaki;
+}
+div.box,p{
+    color:cadetblue;
+}
+div>p{
+    background-color: aqua;
+}
+p+div{
+    border: 2px solid red;
+}
+*//*
+ATTRİBUTE SELECTORS
+p[title]{
+    border: 1px solid gray;
+    padding: 10px; /*kutu ile yazı arasındaki boşlık
+}/
+p[title="third paragraph"]{
+    background-color: antiquewhite;
+}
+p[title="forth paragraph"]{
+    background-color: aqua;
+}
+p[title~="forth"]{/*~ işareti içinde forth olanı alıp işlem yapabiliyor
+    color:aliceblue;
+}
+a[href^=http]{/*başında http olanlara uygular
+    background-color: blueviolet;
+}
+a[href$=com]{/*com ile bitenleri aldı
+    color: coral;
+}
+a[href="http://www.google.com"][target="_blank"]{
+    color: azure;
+}
+
+input[type="text"]{
+    display: block;
+    width: 150px;
+    background-color: blue;
+}
+input[type="button"]{
+    color: darkgoldenrod;
+    padding: 10px;
+}*/
+
+/*Pseudo Element*/
+
+p::first-line{/*ilk satıra işlem yapar elementte ::*//*
+    color: aquamarine;
+    font-weight: bold;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+p.about::first-line{
+    color: brown;
+}
+p::first-letter{
+    font-size: 48px;
+}
+p::after{/*her paragrafın sonuna -deneme yazısını ekledi*//*
+    content: "-deneme";
+        display: block;
+}
+/*Pseudo class classta :*/ /*
+ul li{
+    padding: 10px;
+    margin-bottom: 10px;
+    list-style: none;
+}
+ul li:first-child{
+    background-color: aquamarine;
+}
+ul li:last-child{
+    background-color: darksalmon;
+}
+ul li:nth-of-type(even){/*her elemana*//*
+    border: 2px solid green;
+}
+ul li:nth-of-type(odd){/*tek sayılı elman*//*
+    border: 2px solid blue;
+}
+a{
+    padding: 5px 8px;
+    text-decoration: none;
+    display: block;
+    width: 80px;
+    border: 1px solid gray;
+    margin-bottom: 10px;
+}
+
+a:link{
+    color: chocolate;
+}
+a:visited{
+    color: darkmagenta;
+}
+a:hover{
+    color: aliceblue;
+    background-color: forestgreen;
+}
+a:active{
+    color: crimson;
+    background-color:dodgerblue;
+}
+
+span{
+    display: none;
+    background-color: chartreuse;
+    padding: 20px;
+}
+
+div:hover span {/*div üzerine geldiğinde görünür olur*//*
+    display: block;
+}
+
+*/
+
+/*UYGULAMA*/
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

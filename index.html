@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Internal CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h1{
+            color:bisque;
+            font-size: 90px;
+            text-align: center;
+        }
+        p{ /*internal css sadece bu sayfa için geçerli ise*/
+            font-size: 15px;
+            text-align: left;
+            border: 1px solid green;
+        }
+        .red{
+            color: red;
+        }
+        .blue{
+            color: blue;
+        }
+        .f22{
+            font-size: 22px;
+        }
+        #header{
+            font-size: 55px;
+        }
+        
+    </style>
+</head>
+<body>
+   <h1 style="border: 5px solid red;">Web Geliştirme</h1>
+   <h1 id="header" class="red">İkinci Başlık</h1>
+    <p style="color: bisque;">Komple Uygulamalı Web Geliştirme</p>
+    <p style="border: none;">Komple Uygulamalı Web Geliştirme</p>
+    <p>Komple Uygulamalı Web Geliştirme</p>
+    
+    <ul>
+        <li><a href="">Index</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Reference</a></li>
+    </ul>
+    <p style="color: chocolate;">Komple Uygulamalı Web Geliştirme</p>
+    <p class="blue">Komple Uygulamalı Web Geliştirme</p>
+    <p class="red f22">Komple Uygulamalı Web Geliştirme</p>
+    <p>Komple Uygulamalı Web Geliştirme</p>
+</body>
+</html>
